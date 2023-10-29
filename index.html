@@ -19,21 +19,12 @@
     <div class="container-fluid">
         <main class="row">
             <div class="col">
-                <h1>Beach Tennis Leaderboard</h1>
-
-                <p>Track the beach-tennis leaderboard status.</p>
+                <h2>Beach Tennis Leaderboard</h2>
 
                 <div id="table-container"></div>
             </div>
         </main>
-        <footer class="row">
-            <div class="col">
-                <hr>
-                <p class="text-right"><a href="https://github.com/derekeder/csv-to-html-table">CSV to HTML Table</a> by
-                    <a href="http://derekeder.com">Derek
-                        Eder</a></p>
-            </div>
-        </footer>
+        
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
@@ -52,7 +43,7 @@
         CsvToHtmlTable.init({
             csv_path: "data/29102023.csv",
             element: "table-container",
-            allow_download: true,
+            allow_download: false,
             csv_options: {
                 separator: ",",
                 delimiter: '"'
